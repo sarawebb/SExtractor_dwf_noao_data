@@ -1,0 +1,18 @@
+Lmod has detected the following error: The following module(s) are unknown:
+"funpack"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore-cache load "funpack"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+
+FITSIO status = 108: error reading from FITS file
+Error reading data buffer from file:
+/home/swebb/oz100/archive_NOAO_data/data_drop/c4d_150228_082455_osj_i_v1.fits.fz
+Error reading elements 1 thru 1318 from column 1 (ffgclb).
+error reading compressed byte stream from binary table
