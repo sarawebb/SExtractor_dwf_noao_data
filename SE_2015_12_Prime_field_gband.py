@@ -21,23 +21,25 @@ from astropy import units as u
 import datetime as dt 
 import glob
 
-################ CHANGE THE INFO ###################################
-path = '/mnt/dwf/archive_NOAO_data/data_outputs/2015/01/4hr/g_band/single/*/ccds'
+################ MAKE SURE TO CHANGE THE INFO ###################################
+path = '/mnt/dwf/archive_NOAO_data/data_outputs/2015/12/Prime_field/g_band/single/*/ccds'
 color_type = 'g_band'
 thresh = 1.5
-field = '4hr'
+field = 'Prime_field'
 image_type = 'single'
 year = '2015'
-month = '01'
+month = '12'
 mag_zpt = '25'
 path_list = glob.glob(path)
-#print(path_list)
+print(path_list)
+
+################ DID YOU CHANGE THE INFO????? ###################################
 
 for i in path_list: 
 	#print(i)
 	for filename in os.listdir(i):
 		if filename.endswith('.fits'):
-			#print(filename)
+			print(filename)
 			#print(i + '/' + filename)
 			hdulist = fits.open(i + '/' + filename)
 			head = hdulist[0].header

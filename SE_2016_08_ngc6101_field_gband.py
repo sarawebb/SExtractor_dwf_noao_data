@@ -22,13 +22,13 @@ import datetime as dt
 import glob
 
 ################ CHANGE THE INFO ###################################
-path = '/mnt/dwf/archive_NOAO_data/data_outputs/2015/01/4hr/g_band/single/*/ccds'
+path = '/mnt/dwf/archive_NOAO_data/data_outputs/2016/08/ngc6101/g_band/single/*/ccds'
 color_type = 'g_band'
 thresh = 1.5
-field = '4hr'
+field = 'ngc6101'
 image_type = 'single'
-year = '2015'
-month = '01'
+year = '2016'
+month = '08'
 mag_zpt = '25'
 path_list = glob.glob(path)
 #print(path_list)
