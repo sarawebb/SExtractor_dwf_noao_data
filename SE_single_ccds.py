@@ -65,6 +65,5 @@ for i in path_list:
 			else:
 				pass 
 			#for j in thresh: 
-			os.system('sex ' + str(i) + '/' + filename +' -c default_params.sex -CATALOG_NAME ' + cat_path + '/' + filename  + '_thresh_'+ str(thresh) +'_SE.cat -DETECT_THRESH ' + str(thresh) +' -MAG_ZEROPOINT ' + str(mag_zpt)  )
-			#-CHECKIMAGE_NAME ' + check_path + '/' + filename + '_' + str(thresh) +'_CHECKIMAGE.fits'
+			os.system('sex ' + str(i) + '/' + filename +' -c default_params.sex -CATALOG_NAME ' + cat_path + '/' + filename  + '_thresh_'+ str(thresh) +'_SE.cat -DETECT_THRESH ' + str(thresh) +' -MAG_ZEROPOINT ' + str(mag_zpt)  ' -CHECKIMAGE_NAME ' + check_path + '/' + filename + '_' + str(thresh) +'_CHECKIMAGE.fits')
 			

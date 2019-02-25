@@ -21,19 +21,17 @@ from astropy import units as u
 import datetime as dt 
 import glob
 
-################ MAKE SURE TO CHANGE THE INFO ###################################
-path = '/mnt/dwf/archive_NOAO_data/data_outputs/2015/12/FRB151230/g_band/single/*/ccds'
+################ CHANGE THE INFO ###################################
+path = '/mnt/dwf/archive_NOAO_data/data_outputs/2017/02/Prime/g_band/single/*/ccds'
 color_type = 'g_band'
 thresh = 1.5
-field = 'FRB151230'
+field = 'Prime'
 image_type = 'single'
-year = '2015'
-month = '12'
+year = '2017'
+month = '02'
 mag_zpt = '25'
 path_list = glob.glob(path)
 #print(path_list)
-
-################ DID YOU CHANGE THE INFO????? ###################################
 
 for i in path_list: 
 	#print(i)

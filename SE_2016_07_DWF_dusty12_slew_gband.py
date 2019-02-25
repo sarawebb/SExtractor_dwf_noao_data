@@ -22,16 +22,16 @@ import datetime as dt
 import glob
 
 ################ MAKE SURE TO CHANGE THE INFO ###################################
-path = '/mnt/dwf/archive_NOAO_data/data_outputs/2015/12/FRB151230/g_band/single/*/ccds'
+path = '/mnt/dwf/archive_NOAO_data/data_outputs/2016/07/DWF_dusty12_slew/g_band/single/*/ccds'
 color_type = 'g_band'
 thresh = 1.5
-field = 'FRB151230'
+field = 'DWF_dusty12_slew'
 image_type = 'single'
-year = '2015'
-month = '12'
+year = '2016'
+month = '07'
 mag_zpt = '25'
 path_list = glob.glob(path)
-#print(path_list)
+print(path_list)
 
 ################ DID YOU CHANGE THE INFO????? ###################################
 
@@ -39,7 +39,7 @@ for i in path_list:
 	#print(i)
 	for filename in os.listdir(i):
 		if filename.endswith('.fits'):
-			#print(filename)
+			print(filename)
 			#print(i + '/' + filename)
 			hdulist = fits.open(i + '/' + filename)
 			head = hdulist[0].header
